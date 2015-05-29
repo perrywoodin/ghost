@@ -10,14 +10,17 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://my-ghost-blog.com',
+        url: 'http://blog.node40.com',
         mail: {},
         database: {
-            client: 'sqlite3',
+            client: 'mysql',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
-            },
-            debug: false
+                    host: '127.0.0.1',
+                    user: 'ghost',
+                    password: 'YOUR_PASSWORD',
+                    database: 'ghost',
+                    charset: 'utf8'
+            }
         },
 
         server: {
