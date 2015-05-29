@@ -514,6 +514,11 @@ body.nav-opened .site-wrapper {
     width: 80%;
 }
 
+img.blog-cover {
+    max-width: 100%;
+    width:auto;
+}
+
 .main-nav {
     position: relative;
     padding: 35px 40px;
@@ -1859,6 +1864,21 @@ body:not(.post-template) .post-title {
 
     .post-excerpt p {
         font-size: 0.85em;
+    }
+
+    p img {
+        width:auto;
+        max-width:100%;
+    }
+
+    .post-excerpt embed, .post-excerpt iframe { 
+    max-width: 100%; 
+    width: 100%;
+    }
+
+    .post-content embed, .post-content iframe { 
+    max-width: 100%; 
+    width: 100%;
     }
 
     .page-description {
